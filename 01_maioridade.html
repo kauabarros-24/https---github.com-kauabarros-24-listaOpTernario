@@ -4,11 +4,10 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
-
+    const idade = Number((prompt("Digite a dua idade ")).replace(",", "."));
 
     //Processamento
-
-
-    //Saída
+    const falta = 18 - idade;
+    (idade >= 18) ? alert(`Você já é de maior`) : alert((`falta ${falta} ano(s) para a maioridade`).replace(".", ","));
 
 </script>

@@ -6,11 +6,18 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const litro = Number((prompt("Digite o preço do combustível")).replace(",", "."));
+    const gasta = Number((prompt("Digite quantos litros de combustível gasta para ir ao trabalho")).replace(",", "."));
+    const publico = Number((prompt("Digite quanto custa o preço da passagem de ônibus")).replace(",", "."));
+    const quantas = Number(prompt("Digite quantas passagens você usa para IR ao trabalho: "));
+    const apoio = (litro * gasta) * 2;
+    const nova = (publico * quantas) * 2;
 
     //Processamento
+    const mensagem = (apoio < nova) ? `O meio mais barato é o seu automóvel, sendo o valor do transporte igual á R$ ${apoio.toFixed(2)} ` :  (apoio > nova) ? `O transpote público é o mais barato, sendo o valor igual á R$ ${nova.toFixed(2)}` : `Caso inválido`;
 
-    
+    alert((mensagem).replace(".", ","));
+
     //Saída
 
     

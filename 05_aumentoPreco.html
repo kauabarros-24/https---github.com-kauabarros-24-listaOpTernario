@@ -2,17 +2,19 @@
 <script>
     //Problema: Aumento de Preço
     //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
-        //- até 280(inclusive): aumento de 20 %
-        //- até 700(inclusive): aumento de 15 %
-        //- até 1500(inclusive): aumento de 10 %
-        //- acima de 1500: aumento de 5 %
-    
+    //- até 280(inclusive): aumento de 20 %
+    //- até 700(inclusive): aumento de 15 %
+    //- até 1500(inclusive): aumento de 10 %
+    //- acima de 1500: aumento de 5 %
+
     //Entrada
-
-
+    const preco = Number((prompt(`Digite o preço do produto: `)).replace(",", "."));
+    let apoio;
     //Processamento
+    (preco <= 280) ? apoio = preco + (preco * 0.2) : (preco <= 700) ? apoio = preco + (preco * 0.15) : (preco <= 1500) ? apoio = preco + (preco * 0.1) : (preco > 1500) ? apoio = preco + (preco * 0.05) : alert("Caso inválido");
 
-    
+    alert((`${apoio.toFixed(2)}`).replace(".", ","));
+
     //Saída
 
 </script>

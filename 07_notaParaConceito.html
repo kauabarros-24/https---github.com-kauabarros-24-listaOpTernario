@@ -10,11 +10,14 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    let nota = Number((prompt("Digite a sua nota: ")).replace(",", "."));
 
     //Processamento
+    (nota >= 9 && nota <= 10) ? nota = `A` : (nota >= 8 && nota <= 8.9 ) ? nota = `B` : (nota >= 7 && nota <= 7.9) ? nota = `C` : (nota >= 6 && nota <= 6.9) ? nota = `D` : (nota <= 5.9) ? nota = `E` : nota = `Caso inválido`;
 
-    
+    alert(`${nota}`);
+
+
     //Saída
 
 </script>
