@@ -7,12 +7,13 @@
     // Se o total de horas trabalhadas ultrapassar 60 horas, haverá adicional de 30%.
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
-    //Entrada
+    //Entrada?
+    const horas = Number((prompt("Digite quantas horas trabalha por semana: ")).replace(",", "."));
+    const recebe = Number((prompt("Digite quantas reais recebe por hora")).replace(",", "."));
+    let um = horas * recebe;
+    let esforço;
+    let outro;
 
-
-    //Processamento
-
-    
-    //Saída
+    (horas <= 45) ? alert((`Você recebeu R$ ${um.toFixed(2)} essa semana`).replace(".", ",")) : (horas > 45 && horas <= 60) ? [esforço = um + (um * 0.2)] [outro = horas / esforço] [alert((`Você ganhou R$ ${um.toFixed(2)} essa semana, recebendo R$ ${outro.toFixed(2)} por hora`).replace(".", ","))] : (horas > 60) ? [esforço = um + (um * 0.3)] [outro = horas / esforço] [alert((`Você ganhou R$ ${esforço.toFixed(2)} essa semana, recebendo R$ ${outro.toFixed(2)} por hora`).replace(".", ","))] : alert(`Caso inválido`);
 
 </script>

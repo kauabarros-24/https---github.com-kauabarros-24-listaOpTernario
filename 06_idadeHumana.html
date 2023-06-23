@@ -11,10 +11,6 @@
     const peso = Number((prompt("Digite o peso do seu cão: ")).replace(".", ","));
     let canino = Number((prompt("Digite a idade do seu cão: ")).replace(",", "."));
     //Processamento
-    (peso <= 10) ? canino = canino * 5 : (peso <= 15) ? canino = canino * 6 : (peso > 15) ? canino = canino * 7 : canino = ErrorEvent;
-
-    alert((`O seu cão tem ${canino} anos caninos`).replace(".", ","));
+    (peso <= 10) ? [canino = canino * 5][alert((`O seu cão tem ${canino} anos caninos`).replace(".", ","))] : (peso <= 15) ? [canino = canino * 6][alert((`O seu cão tem ${canino} anos caninos`).replace(".", ","))] : (peso > 15) ? [canino = canino * 7][alert((`O seu cão tem ${canino} anos caninos`).replace(".", ","))] : alert(`Caso inválido`)
     
-    //Saída
-
 </script>

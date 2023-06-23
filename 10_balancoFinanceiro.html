@@ -7,14 +7,18 @@
     // - Conta de telefone
     // - Supermercado
     // Também peça para o usuário informar o valor que recebe de remuneração mensal (salário), proveniente da sua atuação profissional.
-    // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
+    // Verifique se o usuário ganha mais do que gasta e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
-    //Entrada
-
+    //Entrada?
+    const água = Number((prompt("Digite quanto gasta com água por mês")).replace(",", "."));
+    const energia = Number((prompt("Digite quantas gasta com energia elétrica por mês: ")).replace(",", "."));
+    const telefone = Number((prompt("Digite quanto gasta por mês com o telefone: ")).replace(",", "."));
+    const supermercado = Number((prompt("Digite quanto gasta com supermercado: ")).replace(",", "."));
+    const recebe = Number((prompt("Digite quanto recebe por mês ")).replace(",", "."));
+    let soma = (água + energia) + (telefone + supermercado);
+    let divisão;
 
     //Processamento
+    (recebe > soma) ? [divisão = recebe - soma][alert((`Esse mês sobrou R$ ${divisão.toFixed(2)}`).replace(".", ","))] : (recebe < soma) ? [divisão = soma - recebe][alert((`Esse mês faltou R$ ${divisão.toFixed(2)}`))] : (soma == recebe) ? alert(`Esse mês não sobrou nem faltou`) : alert(`Caso inválido`);
 
-    
-    //Saída
-    
 </script>

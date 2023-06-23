@@ -11,9 +11,10 @@
     const preco = Number((prompt(`Digite o preço do produto: `)).replace(",", "."));
     let apoio;
     //Processamento
-    (preco <= 280) ? apoio = preco + (preco * 0.2) : (preco <= 700) ? apoio = preco + (preco * 0.15) : (preco <= 1500) ? apoio = preco + (preco * 0.1) : (preco > 1500) ? apoio = preco + (preco * 0.05) : alert("Caso inválido");
+    (preco <= 280) ? [apoio = preco + (preco * 0.2)][alert((`O valor do produto será de ${apoio.toFixed(2)}`).replace(".", ","))] : (preco <= 700) ? [apoio = preco + (preco * 0.15)][alert((`O valor do produto será de R$ ${apoio.toFixed(2)}`).replace(".", ","))] : (preco <= 1500) ? [apoio = preco + (preco * 0.1)][alert((`O valor do produto será de R$ ${apoio.toFixed(2)}`).replace(".", ","))] : [(preco > 1500)][alert((`O valor do produto será de R$ ${apoio.toFixed(2)}`).replace(".", ","))] ? [apoio = preco + (preco * 0.05)][alert((`O valor do produto será de R$ ${apoio.toFixed(2)}`).replace(".", ","))] : alert(`Caso inválido`);
 
-    alert((`${apoio.toFixed(2)}`).replace(".", ","));
+
+
 
     //Saída
 
